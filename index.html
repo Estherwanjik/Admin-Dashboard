@@ -3,238 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>Admin-Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
 </head>
 <body>
-   <header class="header">
-    <div class="search-container">
-      <label for="search-field"><img src="search-custom.png" alt="Search image"></label>
-       <input type="text" id="search-field" class="serch-input"> 
-    </div>
-    <div class="profile-container">
-        <img class="bell-image" src="notification-custom.png" alt="Bell image">
-        <img class="user profile" src="dog-custom.png" alt="user profile">
-        <h3 class="user-name">Mara</h3>
-    </div>
-    <div class="welcome-container">
-        <img class="user profile-big" src="" alt="user profile">
-        <p class="hi-para">Hello</p>
-        <p class="main-user-name">KIm</p> 
-    </div>
-    <div class="btns-container">
-        <button class="header-btn">New</button>
-        <button class="header-btn">Upload</button>
-        <button class="header-btn">Share</button>
-    </div>
-   </header> 
-   <nav class="sidebar">
-        <div class="logo">
-            <img class="img-icon" src="dashboard-custom.png" alt="Dashboard icon">
-            <h3>Dashboard</h3>
-        </div>
-        <div class="main-links">
-            <ul>
-                <li>
-                    <img src="home-account-custom.png" alt="Home">
-                    <p>Home</p>
-                </li>
-                <li>
-                    <img src="profile-custom.png" alt="Profile">
-                    <p>Profile</p>
-                </li>
-                <li>
-                    <img src="message-bulleted-custom.png" alt="Messages">
-                    <p>Messages</p>
-                </li>
-                <li>
-                    <img src="history-custom.png" alt="History">
-                    <p>History</p>
-                </li>
-                <li>
-                    <img src="tasks-custom.png" alt="Tasks">
-                    <p>Tasks</p>
-                </li>
-                <li>
-                    <img src="communities-custom.png" alt="Communities">
-                    <p>Communities</p>
-                </li>
+    <nav>
+        <div class="sidebar">
+            <div class="dashboard">
+                <img src="dashboard-custom.png" alt="" />Dashboard
+            </div>
+            <ul class="first">
+                <li> <img src="home-wbg.png" alt="" /> Home</li>         
+                <li><img src="profile-custom.png" alt="" />Profile</li>           
+                <li><img src="message-bulleted-custom.png" alt="" />Messages</li>       
+                <li><img src="history-custom.png" alt="" />History</li>
+                <li><img src="tasks-custom.png" alt="" />Tasks</li>
+                <li><img src="communities-custom.png" alt="" />Communities</li>
+            </ul>         
+            <ul class="second">
+                    <li><img src="settings-custom.png" alt="" />Settings</li>    
+                    <li> <img src="support-custom.png" alt="" />Support</li>
+                    <li><img src="privacy.png" alt="" />Privacy</li>
+
             </ul>
         </div>
-        <div class="secondary-links">
-            <ul>
-                <li>
-                    <img src="settings-custom.png" alt="Settings">
-                    <p>Settings</p>
-                </li>
-                <li>
-                    <img src="support-custom.png" alt="Support">
-                    <p>Support</p>
-                </li>
-                <li>
-                    <img src="" alt="Privacy">
-                    <p>Privacy</p>
-                </li>
-            </ul>
+    </nav>
+    <header>
+        <div class="search">
+            <button class="search"><img src="search-custom.png" alt="" /></button>
+            <input type="search" id="" class="searchbar" /> 
         </div>
-   </nav>
-   <main class="content">
-            <div class="projects">
-              <h4>Your Projects</h4>
+        <button class="bell">
+           <img src="notification-custom.png" alt="" /></button>
+        <button class="profile">
+           <img class="user-profile" src="charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg" style="width: 70px;height: 70px;" alt="" />
+        </button>
+        <div class="user-name">Charlse</div>
+        <div class="greeting">
+            <img class="user-profile-big" src="charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg" style="width: 100px;height: 100px;" alt="" />
+            <div class="text">
+                Hi there,<br />
+                Charlse(@deluvio)
+            </div>     
+        </div>
+        <button class="new">new</button><button class="upload">Upload</button>
+        <button class="share">share</button>
+        </div> 
+    </header>
+    <main>
+        <div class="project-container">
+            <div class="head">Your project</div>
+            <article>
                 <div class="project">
-                    <div class="color-block"></div>
-                    <div class="text-block">
-                        <h5 class="project name">Super cool project</h5>
-                        <p>sed tempus ut lacus ut scenteriaque.
-                        Suspendise solicitudin nibh erat,idfacilisis accumasannec</p>
+                    <div>
+                        Super cool project<br />
+                        Sed tempus ut lacus ut scenteriaque.
+                        Suspendise solicitudin nibh erat,idfacilisis accumasannec
                     </div>
-                    <div class="action-block">
-                        <img src="refresh-custom.png" alt="refresh icon" class="action-img">
-                        <img src="delete-custom.png" alt="delete icon" class="action-img">
-                        <img src="share-custom.png" alt="share icon" class="action-img">
+                    <div>
+                        <button class="project-icons">
+                            <img src="refresh-custom.png" alt="refresh icon" />
+                        </button>
+                        <button class="project-icons">    
+                            <img src="delete-custom.png" alt="delete icon" />
+                        <button>
+                        <button class="project-icons">     
+                            <img src="share-custom.png" alt="share icon" />
+                        </button>  
                     </div>
                 </div>
                 <div class="project">
-                    <div class="color-block"></div>
-                    <div class="text-block">
-                        <h5 class="project name">Less cool project</h5>
-                        <p>Nullam condimentum ipsum ut lectus vehicula
-                            consectetur.Quisque sed dolor tincidunt, 
-                            consectetur sapien et,facilisis dolor.Duis sem
-                            pellentesque lacus.
-                        </p>
+                    <div>
+                        Less cool project<br />
+                        Nullam condimentum ipsum ut lectus vehicula
+                        consectetur.Quisque sed dolor tincidunt, 
+                        consectetur sapien et,facilisis dolor.Duis sem
+                        pellentesque lacus.
                     </div>
-                    <div class="action-block">
-                        <img src="refresh-custom.png" alt="refresh icon" class="action-img">
-                        <img src="delete-custom.png" alt="delete icon" class="action-img">
-                        <img src="share-custom.png" alt="share icon" class="action-img">
+                    <div>
+                        <button class="project-icons">
+                            <img src="refresh-custom.png" alt="refresh icon" />
+                        </button>
+                        <button class="project-icons">    
+                            <img src="delete-custom.png" alt="delete icon" />
+                        <button>
+                        <button class="project-icons">     
+                            <img src="share-custom.png" alt="share icon" />
+                        </button> 
                     </div>
                 </div>
                 <div class="project">
-                    <div class="color-block"></div>
-                    <div class="text-block">
-                        <h5 class="project name">Impossible App</h5>
-                        <p>In hac habitasse plantea dictumst.vivamus 
+                    <div>
+                        Impossible App<br />
+                        In hac habitasse plantea dictumst.vivamus 
                         dictum rutrum arcu, a placerat velit sagittis id.
-                        </p>
                     </div>
-                    <div class="action-block">
-                        <img src="refresh-custom.png" alt="refresh icon" class="action-img">
-                        <img src="delete-custom.png" alt="delete icon" class="action-img">
-                        <img src="share-custom.png" alt="share icon" class="action-img">
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="color-block"></div>
-                    <div class="text-block">
-                        <h5 class="project name">Easy Peasy App</h5>
-                        <p>Etium curcus eros ac efficitur fringilla.
-                            vestibulum dignissim urna eget accumsan aliquam.
-                            curabitur dignissim nisi in tortor commodo,
-                            ac,bibendum magna tincidunt.
-                        </p>
-                    </div>
-                    <div class="action-block">
-                        <img src="refresh-custom.png" alt="refresh icon" class="action-img">
-                        <img src="delete-custom.png" alt="delete icon" class="action-img">
-                        <img src="share-custom.png" alt="share icon" class="action-img">
+                    <div>
+                        <button class="project-icons">
+                            <img src="refresh-custom.png" alt="refresh icon" />
+                        </button>
+                        <button class="project-icons">    
+                            <img src="delete-custom.png" alt="delete icon" />
+                            <button>
+                        <button class="project-icons">     
+                            <img src="share-custom.png" alt="share icon" />
+                        </button> 
                     </div>
                 </div>
                 <div class="project">
-                    <div class="color-block"></div>
-                    <div class="text-block">
-                        <h5 class="project name">Ad blocker</h5>
-                        <p>Quisque eget rutrum nisl.Nam augue
+                    <div>
+                        Easy Peasy App<br />
+                        Etium curcus eros ac efficitur fringilla.
+                        vestibulum dignissim urna eget accumsan aliquam.
+                        curabitur dignissim nisi in tortor commodo,
+                        ac,bibendum magna tincidunt.
+                    </div>
+                    <div>
+                        <button class="project-icons">
+                            <img src="refresh-custom.png" alt="refresh icon" />
+                        </button>
+                        <button class="project-icons">    
+                            <img src="delete-custom.png" alt="delete icon" />
+                            <button>
+                        <button class="project-icons">     
+                            <img src="share-custom.png" alt="share icon" />
+                        </button>
+                    </div>    
+                </div>
+                <div class="project">
+                    <div>
+                        Ad blocker<br />
+                        Quisque eget rutrum nisl.Nam augue
                         justo,curcus vitae metus vel,pharetra
                         hendrerit felis.Aliquam sed malsuada eros
-                        </p>
                     </div>
-                    <div class="action-block">
-                        <img src="refresh-custom.png" alt="refresh icon" class="action-img">
-                        <img src="delete-custom.png" alt="delete icon" class="action-img">
-                        <img src="share-custom.png" alt="share icon" class="action-img">
+                    <div>
+                        <button class="project-icons">
+                            <img src="refresh-custom.png" alt="refresh icon" />
+                        </button>
+                        <button class="project-icons">    
+                            <img src="delete-custom.png" alt="delete icon" />
+                            <button>
+                        <button class="project-icons">     
+                            <img src="share-custom.png" alt="share icon" />
+                        </button>
                     </div>
                 </div>
                 <div class="project">
-                    <div class="color-block"></div>
-                    <div class="text-block">
-                        <h5 class="project name">Money Maker</h5>
-                        <p>praesent convallis, libero quis congue
+                    <div>
+                        Money Maker<br />
+                        praesent convallis, libero quis congue
                         elementum,nunc ante faucibus sapien,acscelerisque
                         tortor purus iit amet ex.
                         pelentesque mollis necsem vel aliquam.
-                        </p>
                     </div>
-                    <div class="action-block">
-                        <img src="refresh-custom.png" alt="refresh icon" class="action-img">
-                        <img src="delete-custom.png" alt="delete icon" class="action-img">
-                        <img src="share-custom.png" alt="share icon" class="action-img">
+                    <div>
+                        <button class="project-icons">
+                            <img src="refresh-custom.png" alt="refresh icon" />
+                        </button>
+                        <button class="project-icons">    
+                            <img src="delete-custom.png" alt="delete icon" />
+                        <button>
+                        <button class="project-icons">     
+                            <img src="share-custom.png" alt="share icon" />
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="announ-and-trending">
-                <div class="announcements">
-                        <h4>Announcements</h4>
-                        <div class="announ-content">
-                            <div class="Announcement">
-                                <h6>Site Maintenance</h6>
-                                <p>Vestibulum condimentum tellus lacus,
-                                    in accumsan elit maximus ac.Donec 
-                                    hendrerit sodales congue...
-                                </p>
-                            </div>
-                            <div class="Announcement-border"></div>
-                            <div class="Announcement">
-                                <h6>Community Share Day</h6>
-                                <p>Nam vel lectus tincidunt,rutrum nulla
-                                eu, ornare libbero.Aliquam dictum
-                                accumsan porttitor ...
-                                </p>
-                            </div>
-                            <div class="Announcement-border"></div>
-                            <div class="Announcement">
-                                <h6>Updated Privacy Policy</h6>
-                                <p>Phasellus effictur nisi eget elit
-                                    consectetur, eget  condimentum ante
-                                    aucter.Cras frigilla sagittis sem in mattis...
-                                </p>
-                            </div>
-                        </div>
+            </article>
+        </div>
+        <div class="announcement">
+            <div class="head">Announcement</div>
+                <article>
+                    <div class="1">
+                        Site Maintenance<br />
+                        Vestibulum condimentum tellus lacus,
+                        in accumsan elit maximus ac.Donec 
+                        hendrerit sodales congue...
                     </div>
-                    <h4>Trending</h4>
-                    <div class="trending-content">
-                        <div class="trend">
-                            <img class="trend-image" src="" alt="dog trend image">
-                            <p>
-                                <span class="trend-tag">@tegan</span><br>
-                                <span class="trend-text">World Peace Builder</span>
-                            </p>
-                        </div>
-                        <div class="trend">
-                            <img class="trend-image" src="" alt="dog trend image">
-                            <p>
-                                <span class="trend-tag">@morgan</span><br>
-                                <span class="trend-text">Super Cool Project</span>
-                            </p>
-                        </div>
-                        <div class="trend">
-                            <img class="trend-image" src="" alt="dog trend image">
-                            <p>
-                                <span class="trend-tag">@kendall</span><br>
-                                <span class="trend-text">Life Changing App</span>
-                            </p>
-                        </div>
-                        <div class="trend">
-                            <img class="trend-image" src="" alt="dog trend image">
-                            <p>
-                                <span class="trend-tag">@alex</span><br>
-                                <span class="trend-text">No Traffic Maker</span>
-                            </p>
-                        </div>
+                    <div class="2">
+                        Community Share Day<br />
+                        Nam vel lectus tincidunt,rutrum nulla
+                        eu, ornare libbero.Aliquam dictum
+                        accumsan porttitor ...
+                    </div>
+                    <div class="3">
+                        Updated Privacy Policy<br />
+                        Phasellus effictur nisi eget elit
+                        consectetur, eget  condimentum ante
+                        aucter.Cras frigilla sagittis sem in mattis...
+                    </div>
+                </article>
+        </div>
+        <div class="trending">
+                <div class="head">Trending</div>
+                <article>
+                    <div class="trending-user">
+                                <img src="dog1.jpg" alt="dog trend image" style="width: 50px;height: 50px;" />@tegan <br />
+                                World Peace Builder
+                    </div>
+                    <div class="trending-user">
+                                <img src="Dog2.jpg" alt="dog trend image" style="width: 50px;height: 50px;" />@morgan <br />
+                                Super cool project
+                    </div>
+                    <div class="trending-user">
+                                <img src="Dog3.jpg" alt="dog trend image" style="width: 50px;height: 50px;" />@Kendall <br />
+                                Life Changing App
+                                    
+                    </div>
+                    <div class="trending-user">
+                                <img src="Dod4.jpg" alt="dog trend image" style="width: 50px;height: 50px;" />@Alex <br />
+                                No Traffic Maker
+                               
                     </div>
                     
-            </div>    
+                </article> 
+               
+        </div>
         
     </main>
 </body>
